@@ -19,6 +19,15 @@ nav>.item{
     background-color: #fcfcfc;
     padding: 10px;
 }
+
+nav>.item-advance{
+    display: none;
+    font-size: 20px;
+    flex: none;
+    width: 70px;
+    background-color: #fcfcfc;
+    padding: 10px;
+}
 /***********************************************/
 .content{
     /* horizontal center */ 
@@ -61,6 +70,13 @@ nav>.item{
 
 @media (max-width: 600px) {
     .song{width: 90%; text-align: center;}
+    nav>.item{
+        display: none;
+    }
+    nav>.item-advance{
+        display: flex;
+        justify-content:end;
+    }
 }
 
 /***********************************************/
