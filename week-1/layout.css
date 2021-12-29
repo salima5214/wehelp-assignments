@@ -28,6 +28,7 @@ nav>.item-advance{
     background-color: #fcfcfc;
     padding: 10px;
 }
+
 /***********************************************/
 .content{
     /* horizontal center */ 
@@ -46,6 +47,7 @@ nav>.item-advance{
     background-color: #b7def8e1; 
     color: #000;    
 }
+
 /***********************************************/
 
 main{
@@ -62,7 +64,6 @@ main>.song{
     background-color: #fcfcfce1; 
     margin: 0 5px; 
 }
-
 
 /***********************************************/
 
