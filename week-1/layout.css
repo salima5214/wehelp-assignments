@@ -48,28 +48,31 @@ nav>.item-advance{
 }
 /***********************************************/
 
-.picture{
+main{
+    width: 1250 px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
 }
 
-.song{
-    text-align: center;
-    font-size: 25px;
-    background-color: #ffffffe1; 
-    margin: 0 5px;
+main>.song{
+    width: 300px;
+    flex: none;
+    text-align: center;font-size: 25px;
+    background-color: #fcfcfce1; 
+    margin: 0 5px; 
 }
 
 
 /***********************************************/
 
 @media (max-width: 1200px) {
-    .song{width: 45%; text-align: center;}
+    main>.song{width: 45%;}
 }
 
 @media (max-width: 600px) {
-    .song{width: 90%; text-align: center;}
+    main>.song{width: 90%;}
+
     nav>.item{
         display: none;
     }
