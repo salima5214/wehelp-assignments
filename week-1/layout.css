@@ -56,7 +56,7 @@ nav>.item{
 /***********************************************/
 
 @media (max-width: 1200px) {
-    .song{width: 90%; text-align: center;}
+    .song{width: 45%; text-align: center;}
 }
 
 @media (max-width: 600px) {
