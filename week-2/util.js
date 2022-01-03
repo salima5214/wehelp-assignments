@@ -3,8 +3,8 @@
 function calculate(min, max)
 {
     // 請用你的程式補完這個函式的區塊
-    var sum = 0;
-    var value = min;
+    let sum = 0;
+    let value = min;
 
     while(true)
     {
@@ -26,9 +26,9 @@ calculate(4, 8); // 你的程式要能夠計算 4+5+6+7+8，最後印出 30
 function avg(data)
 {
     // 請用你的程式補完這個函式的區塊
-    var total_salary = 0
+    let total_salary = 0
 
-    for(var index = 0; index < data["count"]; index++){
+    for(let index = 0; index < data["count"]; index++){
         total_salary += data["employees"][index][ 'salary'];
     }
 
@@ -60,10 +60,10 @@ avg({
 function maxProduct(nums)
 {
     // 請用你的程式補完這個函式的區塊
-    var temp_max_product = -Infinity;
-    for(var i = 0; i < nums.length-1; i++)
+    let temp_max_product = -Infinity;
+    for(let i = 0; i < nums.length-1; i++)
     {
-        for(var j = i+1; j < nums.length; j++)
+        for(let j = i+1; j < nums.length; j++)
         {
             if (nums[i] * nums[j] > temp_max_product)
             {
@@ -84,9 +84,9 @@ maxProduct([-1, -2, 0]) // 得到 2
 function twoSum(nums, target)
 {
     // your code here
-    for(var i = 0; i < nums.length-1; i++)
+    for(let i = 0; i < nums.length-1; i++)
     {
-        for(var j = i+1; j < nums.length; j++)
+        for(let j = i+1; j < nums.length; j++)
         {
             if (nums[i] + nums[j] == target)
             {
@@ -103,11 +103,11 @@ console.log(result); // show [0, 2] because nums[0]+nums[2] is 9
 
 function maxZeros(nums)
 {
-    var temp_max_zeros = 0
-    var current_zeros = 0
-    var flag = true
+    let temp_max_zeros = 0
+    let current_zeros = 0
+    let flag = true
     // 請用你的程式補完這個函式的區塊
-    for(var i = 0; i < nums.length; i++)
+    for(let i = 0; i < nums.length; i++)
     {
         if(nums[i] == 0 && flag)
         {
