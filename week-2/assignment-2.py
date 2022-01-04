@@ -29,7 +29,7 @@ def avg(data):
     total_salary = 0
 
     for index in range(data["count"]):
-        total_salary += data["employees"][index][ 'salary']
+        total_salary += data["employees"][index]["salary"]
 
     average_salary = total_salary / data["count"]
     print(average_salary)

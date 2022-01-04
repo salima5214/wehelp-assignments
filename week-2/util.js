@@ -29,7 +29,7 @@ function avg(data)
     let total_salary = 0
 
     for(let index = 0; index < data["count"]; index++){
-        total_salary += data["employees"][index][ "salary"];
+        total_salary += data["employees"][index]["salary"];
     }
 
     average_salary = total_salary / data["count"]
