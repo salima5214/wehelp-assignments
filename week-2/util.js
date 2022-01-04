@@ -26,7 +26,7 @@ calculate(4, 8); // 你的程式要能夠計算 4+5+6+7+8，最後印出 30
 function avg(data)
 {
     // 請用你的程式補完這個函式的區塊
-    let total_salary = 0
+    let total_salary = 0;
 
     for(let index = 0; index < data["count"]; index++){
         total_salary += data["employees"][index]["salary"];
