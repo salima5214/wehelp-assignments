@@ -1,20 +1,16 @@
 function showRow1(){
     let main = document.querySelector(".row_1");
 
-    for(let i = 0; i < 4; i++){ // console.log(url_data["result"]["results"].length); 
-
-        let stitle = sight_information["result"]["results"][i]["stitle"];
-        let file = "https://"+sight_information["result"]["results"][i]["file"].split("https://")[1];
-
+    for(let i = 0; i < 4; i++){
         let box = document.createElement("div");
         box.className = "box";
         let img = document.createElement("img");
-        img.src = file;
+        img.src = "https://"+sight_information["result"]["results"][i]["file"].split("https://")[1];
         box.appendChild(img);      
         
         let img_name = document.createElement("div");
         img_name.className = "img_name";
-        img_name.textContent = stitle;
+        img_name.textContent = sight_information["result"]["results"][i]["stitle"];
         box.appendChild(img_name);
         main.appendChild(box);
     }
