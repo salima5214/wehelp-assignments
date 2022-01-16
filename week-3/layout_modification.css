@@ -1,17 +1,21 @@
 /***********************************************/
-body{margin: 0px;}
-
-nav{
-    display: flex;
+body {
+    margin: 0px;
 }
-nav>.website{
+
+nav {
+    display: flex;
+} 
+
+nav>.website {
     display: flex;
     font-size: 20px;
     flex: auto;
     background-color: #fcfafa;
     padding: 10px;
 }
-nav>.item{
+
+nav>.item {
     display: flex;
     font-size: 20px;
     flex: none;
@@ -20,7 +24,7 @@ nav>.item{
     padding: 10px;
 }
 
-nav>.item-advance{
+nav>.item-advance {
     display: none;
     font-size: 20px;
     flex: none;
@@ -30,7 +34,7 @@ nav>.item-advance{
 }
 
 /***********************************************/
-.content{
+.content {
     /* horizontal center */ 
     display: flex;
     justify-content: center; 
@@ -50,7 +54,7 @@ nav>.item-advance{
 
 /***********************************************/
 
-.picture{
+.picture {
     width: 1250 px;
     display: flex;
     flex-wrap: wrap;
@@ -60,13 +64,6 @@ nav>.item-advance{
 .line_break {
     width: 100%;
 }
-
-/* .row_2{
-    width: 1250 px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-} */
 
 .box {
     display: flex;
@@ -78,7 +75,7 @@ nav>.item-advance{
     padding: 5px;
 }
 
-img{
+img {
     width: 100%;
     height: 180px;
 }
@@ -89,8 +86,22 @@ img{
     margin: 5px;
 }
 
+/***********************************************/
 
+.load_more {
+    display: flex;
+    justify-content: center;
+}
 
+.load_more>button {
+    width: 120px;
+    height: 60px;
+    font-size: 17px;
+    background-color: #dbdbdb;
+    border: none;
+    margin: 35px;
+
+}
 
 /***********************************************/
 
