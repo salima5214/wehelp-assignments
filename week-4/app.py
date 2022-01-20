@@ -11,14 +11,14 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/member/")
+@app.route("/member")
 def member():
     if session["is_login"] == True:
         return render_template("member.html")
     else:
         return redirect("/")      
 
-@app.route("/error/")
+@app.route("/error")
 def error():
     user_message = request.args.get("message", "") 
     return render_template("error.html", message = user_message)
@@ -31,7 +31,7 @@ def signin():
 
     if account == "test" and password == "test":
         session["is_login"] = True
-        return redirect("/member/")
+        return redirect("/member")
 
     elif account == "" or password == "":
         user_message = "請輸入帳號、密碼"
