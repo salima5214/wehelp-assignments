@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>week-4</title>
+</head>
+<body> 
+ 
+<style type="text/css">
+	.content{
+		/* horizontal center */ 
+		display: flex;
+		justify-content: center; 
+
+		/* vertical center */ 
+		flex-wrap: wrap;
+		align-content: center; 
+
+		/* size setting */ 
+		font-size: 40px;
+		height: 150px;
+
+		/* color setting */ 
+		background-color: #1e2e4de1; 
+		color: rgb(255, 255, 255);    
+	}
+</style>
+
+
+	<div class="content">歡迎光臨，請輸入帳號密碼</div>
+	<br>
+
+	<h1 style="text-align:center;">登入系統</h1>
+
+	<form action = "/signin" method = "POST">
+		<h4 style="text-align:center;">帳號 <input type="text" name="account"/> </h4>
+		<h4 style="text-align:center;">密碼 <input type="text" name="password"/> </h4>
+		<h3 style="text-align:center;"><button>登入</button> </h3>
+	</form>	
+
+</body>
+</html>
