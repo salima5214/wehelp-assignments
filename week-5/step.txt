@@ -1,3 +1,5 @@
+# mysql -u root -p
+
 CREATE DATABASE `website`; # SHOW DATABASES; # DROP DATABASE `website`;
 USE `website`;
 
@@ -82,3 +84,7 @@ FROM `message`
 INNER JOIN `member`
 ON `message`.`member_id` = `member`.`id`
 WHERE `username` = 'test';
+
+
+# exit
+# mysqldump -u root -p website > data.sql
