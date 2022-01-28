@@ -54,7 +54,7 @@
 
 ![](https://i.imgur.com/dHteeHL.png)
 
-![](https://i.imgur.com/S3m9Brc.png)
+![](https://i.imgur.com/jwAbQQY.png)
 
 ![](https://i.imgur.com/jtCXXw8.png)
 
