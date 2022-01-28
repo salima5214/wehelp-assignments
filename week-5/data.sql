@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 8.0.28, for macos11 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
 -- Host: localhost    Database: website
 -- ------------------------------------------------------
@@ -39,7 +39,7 @@ CREATE TABLE `member` (
 
 LOCK TABLES `member` WRITE;
 /*!40000 ALTER TABLE `member` DISABLE KEYS */;
-INSERT INTO `member` VALUES (1,'test2','test','test',10,'2022-01-29 02:53:52'),(2,'SALIMA','salima','666',20,'2022-01-29 02:53:51'),(3,'LUCY','lucy','777',30,'2022-01-29 02:53:50'),(4,'JOY','joy','888',40,'2022-01-29 02:53:49'),(5,'SOS','sos','999',50,'2022-01-29 02:53:48');
+INSERT INTO `member` VALUES (1,'test2','test','test',10,'2022-01-29 03:20:50'),(2,'SALIMA','salima','666',20,'2022-01-29 03:20:49'),(3,'LUCY','lucy','777',30,'2022-01-29 03:20:48'),(4,'JOY','joy','888',40,'2022-01-29 03:20:47'),(5,'SOS','sos','999',50,'2022-01-29 03:20:46');
 /*!40000 ALTER TABLE `member` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -67,7 +67,7 @@ CREATE TABLE `message` (
 
 LOCK TABLES `message` WRITE;
 /*!40000 ALTER TABLE `message` DISABLE KEYS */;
-INSERT INTO `message` VALUES (11,5,'I like it!','2022-01-29 02:54:06'),(22,1,'hahaha','2022-01-29 02:54:08'),(33,3,'XDDD','2022-01-29 02:54:10'),(44,1,'nice~~','2022-01-29 02:54:12'),(55,2,'wow...','2022-01-29 02:54:14'),(66,2,'good~','2022-01-29 02:54:16'),(77,1,'> <','2022-01-29 02:54:18');
+INSERT INTO `message` VALUES (11,5,'I like it!','2022-01-29 03:20:42'),(22,1,'hahaha','2022-01-29 03:20:44'),(33,3,'XDDD','2022-01-29 03:20:46'),(44,1,'nice~~','2022-01-29 03:20:48'),(55,2,'wow...','2022-01-29 03:20:50'),(66,2,'good~','2022-01-29 03:20:52'),(77,1,'> <','2022-01-29 03:20:54');
 /*!40000 ALTER TABLE `message` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-29  2:57:16
+-- Dump completed on 2022-01-29  3:21:32
