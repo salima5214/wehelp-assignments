@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>week-6</title>
+</head>
+<body> 
+ 
+<style type="text/css">
+	.content{
+		/* horizontal center */ 
+		display: flex;
+		justify-content: center; 
+
+		/* vertical center */ 
+		flex-wrap: wrap;
+		align-content: center; 
+
+		/* size setting */ 
+		font-size: 40px;
+		height: 150px;
+
+		/* color setting */ 
+		background-color: #1e2e4de1; 
+		color: rgb(255, 255, 255);    
+	}
+</style>
+
+
+	<div class="content">歡迎光臨，這是會員頁</div>
+	<br>
+
+	<h1 style="text-align:center;">{{name}}，歡迎登入系統</h1>
+
+    <form action="/singout" method="GET"> 
+    <h3 style="text-align:center;"> <input type=submit value="登出系統"> </h3>
+    </form>
+
+

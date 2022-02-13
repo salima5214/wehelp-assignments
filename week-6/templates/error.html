@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>week-4</title>
+</head>
+<body> 
+ 
+<style type="text/css">
+	.content{
+		/* horizontal center */ 
+		display: flex;
+		justify-content: center; 
+
+		/* vertical center */ 
+		flex-wrap: wrap;
+		align-content: center; 
+
+		/* size setting */ 
+		font-size: 40px;
+		height: 150px;
+
+		/* color setting */ 
+		background-color: #1e2e4de1; 
+		color: rgb(255, 255, 255);    
+	}
+
+
+</style>
+
+
+	<div class="content">失敗頁面</div>
+	<br>
+
+	<h1 style="text-align:center;">{{ error_message }}</h1>
+
+    <form action="/"> 
+    <h3 style="text-align:center;"> <input type=submit value="返回首頁"> </h3>
+    </form>
+
+</body>
+</html>
