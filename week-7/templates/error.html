@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"></meta> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-	<title>week-6</title>
+	<title>week-7</title>
 </head>
 <body> 
  
@@ -25,16 +25,18 @@
 		background-color: #1e2e4de1; 
 		color: rgb(255, 255, 255);    
 	}
+
+
 </style>
 
 
-	<div class="content">歡迎光臨，這是會員頁</div>
+	<div class="content">失敗頁面</div>
 	<br>
 
-	<h1 style="text-align:center;">{{name}}，歡迎登入系統</h1>
+	<h1 style="text-align:center;">{{ error_message }}</h1>
 
-    <form action="/singout" method="GET"> 
-    <h3 style="text-align:center;"> <input type=submit value="登出系統"> </h3>
+    <form action="/"> 
+    <h3 style="text-align:center;"> <input type=submit value="返回首頁"> </h3>
     </form>
 
 </body>
