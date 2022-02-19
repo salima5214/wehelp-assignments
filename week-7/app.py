@@ -36,27 +36,29 @@ def searchMember():
 
 @app.route("/api/member", methods=["POST"]) 
 def updateName():
-    update_name = request.get_json()
-    # print("updateName", updateName) # {'name': 'user_input'}
-    update_name = update_name["name"]
-    if update_name == "":
-        return json.dumps({"error":True})
+    if "username" in session:
+        update_name = request.get_json()
+        # print("updateName", updateName) # {'name': 'user_input'}
+        update_name = update_name["name"]
+        if update_name == "":
+            return json.dumps({"error":True})
+        else:
+            origin_name = session["username"]
+            my_database = mysql.connector.connect(
+                    host = "localhost",
+                    database = "website",
+                    user = "root",
+                    password = "12345678"
+                )
+            cursor = my_database.cursor()      
+            cursor.execute("UPDATE member SET name=%(name)s WHERE username=%(username)s", {"name": update_name, "username": origin_name})
+            my_database.commit()
+            session["name"] = update_name
+            cursor.close()
+            my_database.close()
+            return json.dumps({"ok":True})
     else:
-        origin_name = session['name']
-        my_database = mysql.connector.connect(
-                host = "localhost",
-                database = "website",
-                user = "root",
-                password = "12345678"
-            )
-        cursor = my_database.cursor()      
-        cursor.execute("UPDATE member SET name=%(name)s WHERE username=%(username)s", {"name": update_name, "username": origin_name})
-        my_database.commit()
-        session["name"] = update_name
-        cursor.close()
-        my_database.close()
-        return json.dumps({"ok":True})
-
+        return json.dumps({"error":True})
 
 @app.route("/member")
 def member():
@@ -97,7 +99,8 @@ def signin():
         return render_template("error.html", error_message = user_message)       
     else:
         name = user_info[0][0]
-        session['name'] = name
+        session["name"] = name
+        session["username"] = username
         return redirect("member")
 
 
