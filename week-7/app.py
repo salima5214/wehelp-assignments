@@ -26,6 +26,8 @@ def searchMember():
     my_command = "SELECT id, name, username FROM member WHERE username = %s;"
     cursor.execute(my_command, (username, ))
     user_info = cursor.fetchone()
+    cursor.close()
+    my_database.close()
     if user_info:
         return { "data": { "id": user_info[0], "name": session['name'], "username": user_info[2] } }
     else:
@@ -51,6 +53,8 @@ def updateName():
         cursor.execute("UPDATE member SET name=%(name)s WHERE username=%(username)s", {"name": update_name, "username": origin_name})
         my_database.commit()
         session["name"] = update_name
+        cursor.close()
+        my_database.close()
         return json.dumps({"ok":True})
 
 
